@@ -15,4 +15,4 @@ class repo{
 
 
 const repo1= new repo( "LaunchX","carlogilmar","JavaScript",100,199,299,10,10)
-console.log(repo1)
+console.log(repo1) 
