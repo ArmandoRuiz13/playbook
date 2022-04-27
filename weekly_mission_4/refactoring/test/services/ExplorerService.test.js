@@ -13,4 +13,17 @@ describe('Prueba unitaria para ExplorerService', () =>{
         const explorersAmmoutInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
         expect(explorersAmmoutInNode).toBe(10)
     })
+    test('Prueba 3 usuarios que su mision es node ', () => {
+        const usernamesInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
+        expect(usernamesInNode).toContain('ajolonauta1')
+        expect(usernamesInNode).toContain('ajolonauta2')
+        expect(usernamesInNode).toContain('ajolonauta3')
+        expect(usernamesInNode).toContain('ajolonauta4')
+        expect(usernamesInNode).toContain('ajolonauta5')
+        expect(usernamesInNode).toContain('ajolonauta11')
+        expect(usernamesInNode).toContain('ajolonauta12')
+        expect(usernamesInNode).toContain('ajolonauta13')
+        expect(usernamesInNode).toContain('ajolonauta14')
+        expect(usernamesInNode).toContain('ajolonauta15')
+    })
 })
