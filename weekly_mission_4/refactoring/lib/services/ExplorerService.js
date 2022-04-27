@@ -4,5 +4,9 @@ class ExplorerService{
         return explorersInNode
 
     }
+    static getAmountOfExplorersByMission(explorers, mission){
+        const explorersAmmoutInNode = explorers.filter((explorer) => explorer.mission == mission);
+        return explorersAmmoutInNode.length
+    }
 }
 module.exports = ExplorerService
